@@ -1,0 +1,64 @@
+main {
+  min-height: calc(100vh - 103px);
+}
+main .main-select {
+  background: var(--white);
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-select-filter-btn {
+  margin-top: 5px;
+}
+.main-select-filter-btn button {
+  margin-right: 8px;
+}
+.main-select-filter-btn-Active {
+  background-color: #dedede;
+  color: var(--black);
+}
+.main-select-select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.main-select-select select {
+  padding: 6px 14px;
+  background-color: var(--white);
+  border: 1px solid var(--lightGray);
+  border-radius: 5px;
+  border-width: 1px;
+  transition: var(--transition);
+  outline: 0px !important;
+  cursor: pointer;
+}
+
+.main-productList {
+  padding: 25px;
+  display: grid;
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin: 0 25px;
+}
+@media (min-width: 767px) {
+  .main-productList {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .main-select-filter-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-select-filter-btn button {
+    margin-bottom: 10px;
+  }
+  .main-select {
+    gap: 15px;
+  }
+  .main-select-select select {
+    padding: 6px 0px;
+    text-align: center;
+  }
+}

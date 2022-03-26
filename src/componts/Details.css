@@ -1,0 +1,31 @@
+.details {
+  max-width: 600px;
+  width: 90%;
+  margin: 25px auto;
+  background: var(--white);
+  padding: 25px;
+  border-radius: 15px;
+}
+.details-image {
+  display: flex;
+  justify-content: center;
+}
+.details-image img {
+  max-width: 100%;
+  max-height: 40vh;
+  border-radius: 5px;
+}
+.details-info {
+  text-align: center;
+  padding-top: 15px;
+}
+.details button {
+  width: 100%;
+}
+.details-info-price-rating {
+  display: flex;
+  justify-content: space-between;
+}
+.details p {
+  margin: 10px 0;
+}
